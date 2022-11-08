@@ -1,0 +1,70 @@
+name: meruem
+description: Le portefeuil numerique complet et pour l'epargne
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  form_field_validator: ^1.1.0
+  google_fonts: ^3.0.1
+  shared_preferences: ^2.0.15
+  flutter_svg: ^1.1.6
+  loading_indicator: ^3.1.0
+  fluttertoast: ^8.1.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash: ^2.2.13
+  flutter_launcher_icons: ^0.10.0
+  flutter_lints: ^2.0.1
+
+flutter_native_splash:
+  background_image: "assets/images/splash_image.png"
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/logo_avec_fond.png"
+
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/auth/
+  # do a hot restart after adding new image directory
+  fonts:
+    - family: Klasik
+      fonts:
+        - asset: assets/fonts/Klasik Regular.otf
+    - family: Gantari-Light
+      fonts:
+        - asset: assets/fonts/Gantari-Light.ttf
+    - family: Gantari-Black
+      fonts:
+        - asset: assets/fonts/Gantari-Black.ttf
+    - family: Gantari-Bold
+      fonts:
+        - asset: assets/fonts/Gantari-Bold.ttf
+    - family: GentiumRegular
+      fonts:
+        - asset: assets/fonts/GentiumRegular.ttf
+    - family: GentiumBold
+      fonts:
+        - asset: assets/fonts/GentiumBold.ttf
